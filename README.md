@@ -9,6 +9,6 @@ The url is then scraped using BeautifulSoup, looking for the relevant tags of th
 
 The user is then asked which of the tables in the page (in the case that there are multiple of them - eg. https://www.bls.gov/regions/southwest/news-release/2022/occupationalemploymentandwages_houston_20220624.htm) they want to scrape. 
 
-To clean the data up even more, the footnote markers are then removed from the dataframe using another function. As the data scraped is going to be quantitative in nature, $ signs and markers are removed from the dataframe created as well. This is to ensure that the data is readable by statistical software and requires very little cleaning after it is run through the script.
+To clean the data up even more, the footnote markers are then removed from the dataframe using another function. As the data scraped is going to be quantitative in nature, $ signs and markers are removed from the dataframe created as well. This is to ensure that the data is readable by statistical software and requires very little cleaning after it is run through the script. You might have to change a few tags in the script for this to work, and so I have #'d out the commands to do the same. 
 
 Finally, the user is then prompted once again to define a .csv filename for the data to be stored to in their local computing environment. The .csv file is then stored onto the working directory. 
